@@ -1,5 +1,5 @@
 // ==========================
-// ./components/Todos
+// ./containers/Todos
 // ==========================
 
 import React, { Component } from 'react';
@@ -160,7 +160,7 @@ class Todos extends Component {
  * It takes three parameters - the object containing the actions, a list of the relevant reducers in
  *  the redux store (you omit the irrelevant ones so that you don't re-render when you don't have to),
  *  and the component itself.
- * It then returns a component with dispatch and state correctly matched to props, so you can access 
+ * It then returns a component with dispatch and state correctly matched to props, so you can access
  * actions via this.props.actions.* and redux keys via this.props.*
  *
  */
