@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import * as actions from '../actions/index';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import reduxify from 'reduxify';
-import Canary from './Canary';
+import Todos from './Todos';
 
 const App = (props) => (
-  <div>
-    <div>"Hello World"</div>
-      <div>props</div>
-    <div>{JSON.stringify(props, null, 2)}</div>
-    <Canary />
-  </div>
+  <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
+    <Todos />
+  </MuiThemeProvider>
 );
 
-export default reduxify(actions, ['canary'], App);
+export default reduxify(actions, ['canary, todos'], App);

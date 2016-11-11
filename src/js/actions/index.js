@@ -1,3 +1,3 @@
 import * as canary from './canary_actions';
-
-export default Object.assign({}, canary);
+import * as todo from './todo_actions';
+export default Object.assign({}, canary, todo);

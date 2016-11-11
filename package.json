@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/brianboyko/G2i_Coding_Assessment#readme",
   "dependencies": {
-    "aphrodite": "^0.5.0",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
     "babel-eslint": "^6.1.0",
@@ -30,6 +29,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.11.6",
+    "classnames": "^2.2.5",
     "css-loader": "^0.25.0",
     "express": "^4.14.0",
     "jsx-loader": "^0.13.2",
@@ -39,6 +39,7 @@
     "react-dom": "^15.3.1",
     "react-hot-loader": "^1.3.0",
     "react-redux": "^4.4.5",
+    "react-swipeable-views": "^0.8.0",
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",

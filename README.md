@@ -33,3 +33,19 @@ Step 1: let's create code pretty much based on prior work.  I've used a *lot* of
 One note is that I will be using the NPM package 'reduxify' - I actually *wrote* this package, so I'll try to explain a bit about it when it comes up.  
 
 -------
+
+## More notes
+
+Okay, so we have things set up.  Now, how do we proceed?  Well, let's look at the TodoMVC from a story prospective.
+
+Based on the React example at TodoMVC, we should do the following:
+
+As a USER:
+
+1) I want to add a TODO and have it be remembered.
+2) I want go be able to see all the todos.
+3) I want to be able to click on a todo's button to mark it complete.
+4) I want to show ALL todos, ACTIVE Todos, and COMPLETED todos.
+5) I want to be able to mark an Active todo as completed.
+6) I want to be able to mark a completed todo as active.  
+7) I want to clear all completed todos with a click. 
