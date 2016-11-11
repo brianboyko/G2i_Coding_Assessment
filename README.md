@@ -17,28 +17,19 @@ Ultimately, we can’t enforce these rules so it’s the honor system. Because w
 - [React documentation](https://facebook.github.io/react/).
 - [Redux documentation](http://redux.js.org/).
 
-----------------------
+---
+Instructions:
 
-## Notes
+```
+$ npm install
+$ npm run pack
+```
 
-Just some notes for my own use:
+Then open up index.html in a browser.  Tested on Chrome in Linux, but should work anywhere.  
 
-1) Let's do the front-end first.
-2) Unit tests for the simple stuff; but not 100% coverage.
-3) Explain every line of code? Docblokr? Docblokr.
-4) Let's do this thing.  LEEROY JENKINS!
+---
 
-Step 1: let's create code pretty much based on prior work.  I've used a *lot* of React/Redux in the past, so it wouldn't be entirely implausible to just fork CanYouHearUs.IS or my Canada MMP project -- but those are way overscoped for the project.  Still, we can get the Package.json file to install a bunch of dependencies at once.
-
-One note is that I will be using the NPM package 'reduxify' - I actually *wrote* this package, so I'll try to explain a bit about it when it comes up.  
-
--------
-
-## More notes
-
-Okay, so we have things set up.  Now, how do we proceed?  Well, let's look at the TodoMVC from a story prospective.
-
-Based on the React example at TodoMVC, we should do the following:
+Based on the React example at TodoMVC, and our 4-hour deadline we should do the following:
 
 As a USER:
 
@@ -48,4 +39,18 @@ As a USER:
 4) I want to show ALL todos, ACTIVE Todos, and COMPLETED todos.
 5) I want to be able to mark an Active todo as completed.
 6) I want to be able to mark a completed todo as active.  
-7) I want to clear all completed todos with a click. 
+7) I want to clear all completed todos with a click.
+
+Future features (not in this release):
+
+As a USER:
+
+1) I want to edit a todo by double clicking it.
+2) I want to delete a todo directly
+3) I want to have a nicer UI which replaces Material UI with the TodoMVC CSS
+
+As an ENGINEER:
+
+1) I want to factor down the ./containers/Todos.js file into smaller files
+2) I want to be able to add mocha unit testing for the actions and reducers.
+3) I want to serve this via Express.
